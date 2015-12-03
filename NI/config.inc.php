@@ -9,7 +9,7 @@ function addPage($nom, $lien, $visible){
 $datas['NomSite'] = "Helpr";
 
 $datas['Page']['index'] = addPage("Accueil","accueil",true);
-$datas['Page']['site'] = addPage("Le concept","conceptx",true);
+$datas['Page']['concept'] = addPage("Le concept","concept",true);
 $datas['Page']['mentions_legales'] = addPage("Mentions Légales","mentions_legales",true);
 
 
