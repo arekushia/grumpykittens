@@ -1,15 +1,15 @@
-<?php /* Smarty version 3.1.27, created on 2015-12-04 05:49:57
-         compiled from "C:\wamp\www\iut\NI\application\views\modules\concept.tpl" */ ?>
+<?php /* Smarty version 3.1.27, created on 2015-12-04 05:47:12
+         compiled from "C:\wamp\www\iut\NI\application\views\modules\casse-brique.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:2041456611b7548ffe0_67920096%%*/
+/*%%SmartyHeaderCode:255956611ad0ddbe72_66741146%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    'b3d83f05441b903226df8d5ecfa7720b5e248930' => 
+    '34db2fc54a0133923bb088dadc542e84844dd764' => 
     array (
-      0 => 'C:\\wamp\\www\\iut\\NI\\application\\views\\modules\\concept.tpl',
-      1 => 1449196438,
+      0 => 'C:\\wamp\\www\\iut\\NI\\application\\views\\modules\\casse-brique.tpl',
+      1 => 1449199327,
       2 => 'file',
     ),
     'b46e9df54bd9266b7e41c30e44f9beee72cdce23' => 
@@ -18,23 +18,23 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       1 => 1449204103,
       2 => 'file',
     ),
-    '5d4bc35d82054f7c976b77e8eaf6ec3e4941669e' => 
+    '77dd85f99246924b820157cfb3885f44cffc8d61' => 
     array (
-      0 => '5d4bc35d82054f7c976b77e8eaf6ec3e4941669e',
+      0 => '77dd85f99246924b820157cfb3885f44cffc8d61',
       1 => 0,
       2 => 'string',
     ),
   ),
-  'nocache_hash' => '2041456611b7548ffe0_67920096',
+  'nocache_hash' => '255956611ad0ddbe72_66741146',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_56611b755024d0_79462529',
+  'unifunc' => 'content_56611ad0e42bb2_47499586',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_56611b755024d0_79462529')) {
-function content_56611b755024d0_79462529 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_56611ad0e42bb2_47499586')) {
+function content_56611ad0e42bb2_47499586 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '2041456611b7548ffe0_67920096';
+$_smarty_tpl->properties['nocache_hash'] = '255956611ad0ddbe72_66741146';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -54,10 +54,15 @@ $_smarty_tpl->properties['nocache_hash'] = '2041456611b7548ffe0_67920096';
 		</header>
 		<main>
 			<?php
-$_smarty_tpl->properties['nocache_hash'] = '2041456611b7548ffe0_67920096';
+$_smarty_tpl->properties['nocache_hash'] = '255956611ad0ddbe72_66741146';
 ?>
 
-	
+	<div class="ui middle aligned center aligned grid page">
+		<div class="column">
+			<?php echo $_smarty_tpl->tpl_vars['cb']->value;?>
+
+		</div>
+	</div>
 
 		</main>
 	</body>

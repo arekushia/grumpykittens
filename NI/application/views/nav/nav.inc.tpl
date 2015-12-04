@@ -1,6 +1,6 @@
 <nav>
 	<div class="ui menu inverted navbar navigation">
-		<a class="item" href="{$datas['Page']['index']['lien']}.php"><h1><img width="200px" src="http://audric.cf/i/logo.png"></h1></a>
+		<a class="item" href="index.php"><h1><img width="200px" src="http://audric.cf/i/logo.png"></h1></a>
 		
 		{foreach $datas['Page'] as $k}
 			{if $k['visible']}

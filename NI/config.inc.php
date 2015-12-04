@@ -12,6 +12,8 @@ $datas['Page']['index'] = addPage("Accueil","accueil",true);
 $datas['Page']['concept'] = addPage("Le concept","concept",true);
 $datas['Page']['mentions_legales'] = addPage("Mentions Légales","mentions_legales",true);
 $datas['Page']['categories'] = addPage("Catégories","categories",false);
+$datas['Page']['casse-brique'] = addPage("Casse-Brique","casse-brique",false);
+$datas['Page']['map'] = addPage("Carte","map",true);
 
 try{
 	$bdd = new PDO('mysql:host=localhost;dbname=helpr', 'root', '');

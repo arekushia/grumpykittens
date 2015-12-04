@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-12-04 03:03:05
+<?php /* Smarty version 3.1.27, created on 2015-12-04 05:41:44
          compiled from "C:\wamp\www\iut\NI\application\views\modules\accueil.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:28935660f4596423d5_84462742%%*/
+/*%%SmartyHeaderCode:16887566119888cb952_08206674%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -15,7 +15,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b46e9df54bd9266b7e41c30e44f9beee72cdce23' => 
     array (
       0 => 'C:\\wamp\\www\\iut\\NI\\application\\views\\layout.tpl',
-      1 => 1449193216,
+      1 => 1449204103,
       2 => 'file',
     ),
     '6268857616c48d0232a9ab59bf995386dc8a64c7' => 
@@ -25,16 +25,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'string',
     ),
   ),
-  'nocache_hash' => '28935660f4596423d5_84462742',
+  'nocache_hash' => '16887566119888cb952_08206674',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5660f4596d3833_68403615',
+  'unifunc' => 'content_56611988957bc7_61832982',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5660f4596d3833_68403615')) {
-function content_5660f4596d3833_68403615 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_56611988957bc7_61832982')) {
+function content_56611988957bc7_61832982 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '28935660f4596423d5_84462742';
+$_smarty_tpl->properties['nocache_hash'] = '16887566119888cb952_08206674';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -54,7 +54,7 @@ $_smarty_tpl->properties['nocache_hash'] = '28935660f4596423d5_84462742';
 		</header>
 		<main>
 			<?php
-$_smarty_tpl->properties['nocache_hash'] = '28935660f4596423d5_84462742';
+$_smarty_tpl->properties['nocache_hash'] = '16887566119888cb952_08206674';
 ?>
 
 	<div class="ui middle aligned center aligned grid page">
@@ -90,20 +90,39 @@ $_smarty_tpl->properties['nocache_hash'] = '28935660f4596423d5_84462742';
 	</footer>
 	<?php echo '<script'; ?>
 >
+	document.onkeypress = function(e) {
+		switch (e.keyCode) {
+			case 98:
+				window.location = "?page=casse-brique";
+				break;
+			case 99:
+				window.location = "?page=categories&cat=catastrophe_naturelle";
+				break;
+			case 103:
+				window.location = "?page=categories&cat=guerre";
+				break;
+			case 97:
+				window.location = "?page=categories&cat=attentat";
+				break;
+			case 101:
+				window.location = "?page=categories&cat=epidemie";
+				break;
+		}
+	};
 	document.onkeydown = function(e) {
-	switch (e.keyCode) {
-		case 37:
-			var audio = new Audio('medias/sounds/exp.mp3');audio.play();
-			break;
-		case 38:
-			var audio = new Audio('medias/sounds/bomb.mp3');audio.play();
-			break;
-		case 39:
-			var audio = new Audio('medias/sounds/alla.mp3');audio.play();
-			break;
-		case 40:
-			var audio = new Audio('medias/sounds/boom.mp3');audio.play();
-			break;
+		switch (e.keyCode) {
+			case 38:
+				var audio = new Audio('medias/sounds/chewy_roar.mp3');audio.play();
+				break;
+			case 37:
+				var audio = new Audio('medias/sounds/light-saber-off.mp3');audio.play();
+				break;
+			case 39:
+				var audio = new Audio('medias/sounds/light-saber-on.mp3');audio.play();
+				break;
+			case 40:
+				var audio = new Audio('medias/sounds/yodalaughing.mp3');audio.play();
+				break;
 		}
 	};
 	<?php echo '</script'; ?>
