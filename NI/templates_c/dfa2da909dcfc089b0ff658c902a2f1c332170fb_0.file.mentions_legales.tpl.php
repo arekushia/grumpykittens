@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-12-04 05:43:27
+<?php /* Smarty version 3.1.27, created on 2015-12-04 06:30:52
          compiled from "C:\wamp\www\iut\NI\application\views\modules\mentions_legales.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:2849566119efe24325_87759221%%*/
+/*%%SmartyHeaderCode:11115661250c156000_75078009%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,7 +9,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'dfa2da909dcfc089b0ff658c902a2f1c332170fb' => 
     array (
       0 => 'C:\\wamp\\www\\iut\\NI\\application\\views\\modules\\mentions_legales.tpl',
-      1 => 1449182866,
+      1 => 1449207051,
       2 => 'file',
     ),
     'b46e9df54bd9266b7e41c30e44f9beee72cdce23' => 
@@ -18,23 +18,23 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       1 => 1449204103,
       2 => 'file',
     ),
-    '2f0a51b72b7adda6bbbd586436d46fb84620b668' => 
+    '1133917f8307999e188dfe61b0a097d472b5e5dc' => 
     array (
-      0 => '2f0a51b72b7adda6bbbd586436d46fb84620b668',
+      0 => '1133917f8307999e188dfe61b0a097d472b5e5dc',
       1 => 0,
       2 => 'string',
     ),
   ),
-  'nocache_hash' => '2849566119efe24325_87759221',
+  'nocache_hash' => '11115661250c156000_75078009',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_566119efe91445_00723174',
+  'unifunc' => 'content_5661250c1c7876_13543183',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_566119efe91445_00723174')) {
-function content_566119efe91445_00723174 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5661250c1c7876_13543183')) {
+function content_5661250c1c7876_13543183 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '2849566119efe24325_87759221';
+$_smarty_tpl->properties['nocache_hash'] = '11115661250c156000_75078009';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -54,10 +54,20 @@ $_smarty_tpl->properties['nocache_hash'] = '2849566119efe24325_87759221';
 		</header>
 		<main>
 			<?php
-$_smarty_tpl->properties['nocache_hash'] = '2849566119efe24325_87759221';
+$_smarty_tpl->properties['nocache_hash'] = '11115661250c156000_75078009';
 ?>
 
-
+	<div class="ui middle aligned center aligned grid page">
+		<div class="column">
+		</div>
+	</div>
+	<div class="ui middle aligned center aligned grid page">
+		<div class="column">
+			<p>Ceci est un site réalisé par le groupe "The Grumpy Kittens" dans le cadre de la nuit de l'informatique 2015, site d'Aix en Provence.</p>
+			<p>Utilisation d'icônes provenant du site "The noun project".</p>
+			<p>Projet sous licence libre.</p>
+		</div>
+	</div>
 
 		</main>
 	</body>
