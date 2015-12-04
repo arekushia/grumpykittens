@@ -10,12 +10,12 @@
 	<div class="ui vertical stripe quote segment">
 		<div class="ui equal width stackable internally celled grid">
 			<div class="center aligned row">
-				{newTile($cat[1])}
-				{newTile($cat[2])}
+				{newTile($cat[1],'one')}
+				{newTile($cat[2],'two')}
 			</div>
 			<div class="center aligned row">
-				{newTile($cat[3])}
-				{newTile($cat[4])}
+				{newTile($cat[3],'three')}
+				{newTile($cat[4],'four')}
 			</div>
 		</div>
 	</div>

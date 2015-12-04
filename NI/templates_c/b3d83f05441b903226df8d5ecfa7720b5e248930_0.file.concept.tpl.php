@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-12-04 00:03:35
+<?php /* Smarty version 3.1.27, created on 2015-12-04 02:49:12
          compiled from "C:\wamp\www\iut\NI\application\views\modules\concept.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:265725660ca470e5735_23386541%%*/
+/*%%SmartyHeaderCode:296565660f11832c062_26277505%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -15,7 +15,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b46e9df54bd9266b7e41c30e44f9beee72cdce23' => 
     array (
       0 => 'C:\\wamp\\www\\iut\\NI\\application\\views\\layout.tpl',
-      1 => 1449176590,
+      1 => 1449193216,
       2 => 'file',
     ),
     '5d4bc35d82054f7c976b77e8eaf6ec3e4941669e' => 
@@ -25,16 +25,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'string',
     ),
   ),
-  'nocache_hash' => '265725660ca470e5735_23386541',
+  'nocache_hash' => '296565660f11832c062_26277505',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5660ca4727f973_35518967',
+  'unifunc' => 'content_5660f1183e22a4_50306856',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5660ca4727f973_35518967')) {
-function content_5660ca4727f973_35518967 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5660f1183e22a4_50306856')) {
+function content_5660f1183e22a4_50306856 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '265725660ca470e5735_23386541';
+$_smarty_tpl->properties['nocache_hash'] = '296565660f11832c062_26277505';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -54,7 +54,7 @@ $_smarty_tpl->properties['nocache_hash'] = '265725660ca470e5735_23386541';
 		</header>
 		<main>
 			<?php
-$_smarty_tpl->properties['nocache_hash'] = '265725660ca470e5735_23386541';
+$_smarty_tpl->properties['nocache_hash'] = '296565660f11832c062_26277505';
 ?>
 
 	
@@ -66,6 +66,26 @@ $_smarty_tpl->properties['nocache_hash'] = '265725660ca470e5735_23386541';
 ?>
 
 	</footer>
+	<?php echo '<script'; ?>
+>
+	document.onkeydown = function(e) {
+	switch (e.keyCode) {
+		case 37:
+			var audio = new Audio('medias/sounds/exp.mp3');audio.play();
+			break;
+		case 38:
+			var audio = new Audio('medias/sounds/bomb.mp3');audio.play();
+			break;
+		case 39:
+			var audio = new Audio('medias/sounds/alla.mp3');audio.play();
+			break;
+		case 40:
+			var audio = new Audio('medias/sounds/boom.mp3');audio.play();
+			break;
+		}
+	};
+	<?php echo '</script'; ?>
+>
 </html>
 <?php }
 }

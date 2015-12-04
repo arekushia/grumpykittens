@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-12-04 02:26:16
+<?php /* Smarty version 3.1.27, created on 2015-12-04 02:41:16
          compiled from "C:\wamp\www\iut\NI\application\views\modules\categories.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:143405660ebb8bfcba8_04887082%%*/
+/*%%SmartyHeaderCode:142055660ef3ced93d3_27084673%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -15,7 +15,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'b46e9df54bd9266b7e41c30e44f9beee72cdce23' => 
     array (
       0 => 'C:\\wamp\\www\\iut\\NI\\application\\views\\layout.tpl',
-      1 => 1449192368,
+      1 => 1449193216,
       2 => 'file',
     ),
     '28353a2f02bf860a1618114ee8127bda0d56aba9' => 
@@ -25,16 +25,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'string',
     ),
   ),
-  'nocache_hash' => '143405660ebb8bfcba8_04887082',
+  'nocache_hash' => '142055660ef3ced93d3_27084673',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5660ebb8c7ecc3_39299451',
+  'unifunc' => 'content_5660ef3d012ad4_82558302',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5660ebb8c7ecc3_39299451')) {
-function content_5660ebb8c7ecc3_39299451 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5660ef3d012ad4_82558302')) {
+function content_5660ef3d012ad4_82558302 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '143405660ebb8bfcba8_04887082';
+$_smarty_tpl->properties['nocache_hash'] = '142055660ef3ced93d3_27084673';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -54,7 +54,7 @@ $_smarty_tpl->properties['nocache_hash'] = '143405660ebb8bfcba8_04887082';
 		</header>
 		<main>
 			<?php
-$_smarty_tpl->properties['nocache_hash'] = '143405660ebb8bfcba8_04887082';
+$_smarty_tpl->properties['nocache_hash'] = '142055660ef3ced93d3_27084673';
 ?>
 
 	<?php if (isset($_smarty_tpl->tpl_vars['cat']->value)) {?>
@@ -74,19 +74,19 @@ $_smarty_tpl->properties['nocache_hash'] = '143405660ebb8bfcba8_04887082';
 	document.onkeydown = function(e) {
 	switch (e.keyCode) {
 		case 37:
-			alert('left');
+			var audio = new Audio('medias/sounds/exp.mp3');audio.play();
 			break;
 		case 38:
-			alert('up');
+			var audio = new Audio('medias/sounds/bomb.mp3');audio.play();
 			break;
 		case 39:
-			alert('right');
+			var audio = new Audio('medias/sounds/alla.mp3');audio.play();
 			break;
 		case 40:
 			var audio = new Audio('medias/sounds/boom.mp3');audio.play();
 			break;
-    }
-};
+		}
+	};
 	<?php echo '</script'; ?>
 >
 </html>

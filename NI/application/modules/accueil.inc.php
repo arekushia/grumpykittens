@@ -6,21 +6,17 @@ function addCat($nom, $img, $sound){
 	return $c;
 }
 
-function newTile($c){
-	echo '<a href="?page=categories&cat='.$c['img'].'" onClick="playSound();" id="tile" class="height wide column">
+function newTile($c, $a){
+	echo '<a href="?page=categories&cat='.$c['img'].'" id="tile" class="height wide column box fade-in '.$a.'">
 			<h2 class="ui center aligned icon header inverted">
 				<img class="ui centered small image" src="medias/'.$c['img'].'.png">'.$c['nom'].'
 			</h2>
 		</a>
-		<script>
-			function playSound(){
-				var audio = new Audio(\'medias/sounds/'.$c['sound'].'.mp3\');
-				audio.play();
-			};
-		</script>
 	';
 }
 
+$sel_cat = $bdd->query("SELECT * FROM categories")->fetchAll();
+var_dump($sel_cat);
 $cat = array('1'=>addCat('Catastrophe naturelle','catastrophe_naturelle',''),
 		'2'=>addCat('Guerre','guerre','boom'),
 		'3'=>addCat('Attentat','attentat',''),

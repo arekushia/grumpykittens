@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-12-04 02:30:46
+<?php /* Smarty version 3.1.27, created on 2015-12-04 02:48:44
          compiled from "C:\wamp\www\iut\NI\application\views\modules\accueil.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:205925660ecc6cb6ee1_78525827%%*/
+/*%%SmartyHeaderCode:27555660f0fc68e504_87769751%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,32 +9,32 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2328d4d95300da02da1b9374db5f4c279dfb4bc4' => 
     array (
       0 => 'C:\\wamp\\www\\iut\\NI\\application\\views\\modules\\accueil.tpl',
-      1 => 1449190398,
+      1 => 1449193723,
       2 => 'file',
     ),
     'b46e9df54bd9266b7e41c30e44f9beee72cdce23' => 
     array (
       0 => 'C:\\wamp\\www\\iut\\NI\\application\\views\\layout.tpl',
-      1 => 1449192644,
+      1 => 1449193216,
       2 => 'file',
     ),
-    '0575df84956d82cb25cdc079c12f8e33f7edb2f7' => 
+    'ec52d970d5cba0474abdf667c1fb30de358a4307' => 
     array (
-      0 => '0575df84956d82cb25cdc079c12f8e33f7edb2f7',
+      0 => 'ec52d970d5cba0474abdf667c1fb30de358a4307',
       1 => 0,
       2 => 'string',
     ),
   ),
-  'nocache_hash' => '205925660ecc6cb6ee1_78525827',
+  'nocache_hash' => '27555660f0fc68e504_87769751',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5660ecc6d3fe40_56718472',
+  'unifunc' => 'content_5660f0fc731116_70060560',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5660ecc6d3fe40_56718472')) {
-function content_5660ecc6d3fe40_56718472 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5660f0fc731116_70060560')) {
+function content_5660f0fc731116_70060560 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '205925660ecc6cb6ee1_78525827';
+$_smarty_tpl->properties['nocache_hash'] = '27555660f0fc68e504_87769751';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -54,7 +54,7 @@ $_smarty_tpl->properties['nocache_hash'] = '205925660ecc6cb6ee1_78525827';
 		</header>
 		<main>
 			<?php
-$_smarty_tpl->properties['nocache_hash'] = '205925660ecc6cb6ee1_78525827';
+$_smarty_tpl->properties['nocache_hash'] = '27555660f0fc68e504_87769751';
 ?>
 
 	<div class="ui middle aligned center aligned grid page">
@@ -67,15 +67,15 @@ $_smarty_tpl->properties['nocache_hash'] = '205925660ecc6cb6ee1_78525827';
 	<div class="ui vertical stripe quote segment">
 		<div class="ui equal width stackable internally celled grid">
 			<div class="center aligned row">
-				<?php echo newTile($_smarty_tpl->tpl_vars['cat']->value[1]);?>
+				<?php echo newTile($_smarty_tpl->tpl_vars['cat']->value[1],'one');?>
 
-				<?php echo newTile($_smarty_tpl->tpl_vars['cat']->value[2]);?>
+				<?php echo newTile($_smarty_tpl->tpl_vars['cat']->value[2],'two');?>
 
 			</div>
 			<div class="center aligned row">
-				<?php echo newTile($_smarty_tpl->tpl_vars['cat']->value[3]);?>
+				<?php echo newTile($_smarty_tpl->tpl_vars['cat']->value[3],'three');?>
 
-				<?php echo newTile($_smarty_tpl->tpl_vars['cat']->value[4]);?>
+				<?php echo newTile($_smarty_tpl->tpl_vars['cat']->value[4],'four');?>
 
 			</div>
 		</div>
@@ -93,7 +93,7 @@ $_smarty_tpl->properties['nocache_hash'] = '205925660ecc6cb6ee1_78525827';
 	document.onkeydown = function(e) {
 	switch (e.keyCode) {
 		case 37:
-			alert('left');
+			var audio = new Audio('medias/sounds/exp.mp3');audio.play();
 			break;
 		case 38:
 			var audio = new Audio('medias/sounds/bomb.mp3');audio.play();
@@ -104,8 +104,8 @@ $_smarty_tpl->properties['nocache_hash'] = '205925660ecc6cb6ee1_78525827';
 		case 40:
 			var audio = new Audio('medias/sounds/boom.mp3');audio.play();
 			break;
-    }
-};
+		}
+	};
 	<?php echo '</script'; ?>
 >
 </html>

@@ -19,7 +19,7 @@
 	document.onkeydown = function(e) {
 	switch (e.keyCode) {
 		case 37:
-			alert('left');
+			var audio = new Audio('medias/sounds/exp.mp3');audio.play();
 			break;
 		case 38:
 			var audio = new Audio('medias/sounds/bomb.mp3');audio.play();
@@ -30,7 +30,7 @@
 		case 40:
 			var audio = new Audio('medias/sounds/boom.mp3');audio.play();
 			break;
-    }
-};
+		}
+	};
 	</script>
 </html>
