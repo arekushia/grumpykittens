@@ -1,15 +1,31 @@
 <?php
-	function addToCarousel($t, $d, $i){
-		$c['titre'] = $t;
-		$c['desc'] = $d;
-		$c['img'] = $i;
-		return $c;
-	}
-	
-	$affiches = array("1"=>addToCarousel("Test","Ceci est un test","kristy.png"),
-			"2"=>addToCarousel("Test 2","Ceci est un  autre test","matthew.png"),
-			"3"=>addToCarousel("Test 3","Cecefezf","molly.png")
+function addCat($nom, $img, $sound){
+	$c['nom'] = $nom;
+	$c['img'] = $img;
+	$c['sound'] = $sound;
+	return $c;
+}
+
+function newTile($c){
+	echo '<a href="?page=categories&cat='.$c['img'].'" onClick="playSound();" id="tile" class="height wide column">
+			<h2 class="ui center aligned icon header inverted">
+				<img class="ui centered small image" src="medias/'.$c['img'].'.png">'.$c['nom'].'
+			</h2>
+		</a>
+		<script>
+			function playSound(){
+				var audio = new Audio(\'medias/sounds/'.$c['sound'].'.mp3\');
+				audio.play();
+			};
+		</script>
+	';
+}
+
+$cat = array('1'=>addCat('Catastrophe naturelle','catastrophe_naturelle',''),
+		'2'=>addCat('Guerre','guerre','boom'),
+		'3'=>addCat('Attentat','attentat',''),
+		'4'=>addCat('Epidémie','epidemie','')
 	);
-	
-	$smarty->assign('affiches',$affiches);
+
+$smarty->assign('cat',$cat);
 ?>

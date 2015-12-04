@@ -7,11 +7,13 @@
 	
 	require_once('config.inc.php');
 	
+	$accueil=false;
 	if(isset($_GET['page'])){
 		$curpage = $_GET['page'];
 		if(array_key_exists($curpage, $datas['Page'])){
 			require_once('application/modules/'.$datas['Page'][$curpage]['lien'].'.inc.php');
 			$smarty->display('application/views/modules/'.$datas['Page'][$curpage]['lien'].'.tpl');
+			$smarty->assign('curpage',$curpage);
 		}
 		else{$accueil = true;}
 	}
@@ -20,5 +22,6 @@
 	if($accueil){
 		require_once('application/modules/'.$datas['Page']['index']['lien'].'.inc.php');
 		$smarty->display('application/views/modules/'.$datas['Page']['index']['lien'].'.tpl');
+		$smarty->assign('curpage',$datas['Page']['index']['lien']);
 	}
 ?>
