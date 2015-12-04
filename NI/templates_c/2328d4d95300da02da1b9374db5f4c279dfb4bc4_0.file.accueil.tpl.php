@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-12-04 02:48:44
+<?php /* Smarty version 3.1.27, created on 2015-12-04 03:03:05
          compiled from "C:\wamp\www\iut\NI\application\views\modules\accueil.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:27555660f0fc68e504_87769751%%*/
+/*%%SmartyHeaderCode:28935660f4596423d5_84462742%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,7 +9,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '2328d4d95300da02da1b9374db5f4c279dfb4bc4' => 
     array (
       0 => 'C:\\wamp\\www\\iut\\NI\\application\\views\\modules\\accueil.tpl',
-      1 => 1449193723,
+      1 => 1449194583,
       2 => 'file',
     ),
     'b46e9df54bd9266b7e41c30e44f9beee72cdce23' => 
@@ -18,23 +18,23 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       1 => 1449193216,
       2 => 'file',
     ),
-    'ec52d970d5cba0474abdf667c1fb30de358a4307' => 
+    '6268857616c48d0232a9ab59bf995386dc8a64c7' => 
     array (
-      0 => 'ec52d970d5cba0474abdf667c1fb30de358a4307',
+      0 => '6268857616c48d0232a9ab59bf995386dc8a64c7',
       1 => 0,
       2 => 'string',
     ),
   ),
-  'nocache_hash' => '27555660f0fc68e504_87769751',
+  'nocache_hash' => '28935660f4596423d5_84462742',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5660f0fc731116_70060560',
+  'unifunc' => 'content_5660f4596d3833_68403615',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5660f0fc731116_70060560')) {
-function content_5660f0fc731116_70060560 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5660f4596d3833_68403615')) {
+function content_5660f4596d3833_68403615 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '27555660f0fc68e504_87769751';
+$_smarty_tpl->properties['nocache_hash'] = '28935660f4596423d5_84462742';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -54,7 +54,7 @@ $_smarty_tpl->properties['nocache_hash'] = '27555660f0fc68e504_87769751';
 		</header>
 		<main>
 			<?php
-$_smarty_tpl->properties['nocache_hash'] = '27555660f0fc68e504_87769751';
+$_smarty_tpl->properties['nocache_hash'] = '28935660f4596423d5_84462742';
 ?>
 
 	<div class="ui middle aligned center aligned grid page">
@@ -67,15 +67,15 @@ $_smarty_tpl->properties['nocache_hash'] = '27555660f0fc68e504_87769751';
 	<div class="ui vertical stripe quote segment">
 		<div class="ui equal width stackable internally celled grid">
 			<div class="center aligned row">
-				<?php echo newTile($_smarty_tpl->tpl_vars['cat']->value[1],'one');?>
+				<?php echo newTile($_smarty_tpl->tpl_vars['cat']->value[0],'one');?>
 
-				<?php echo newTile($_smarty_tpl->tpl_vars['cat']->value[2],'two');?>
+				<?php echo newTile($_smarty_tpl->tpl_vars['cat']->value[1],'two');?>
 
 			</div>
 			<div class="center aligned row">
-				<?php echo newTile($_smarty_tpl->tpl_vars['cat']->value[3],'three');?>
+				<?php echo newTile($_smarty_tpl->tpl_vars['cat']->value[2],'three');?>
 
-				<?php echo newTile($_smarty_tpl->tpl_vars['cat']->value[4],'four');?>
+				<?php echo newTile($_smarty_tpl->tpl_vars['cat']->value[3],'four');?>
 
 			</div>
 		</div>

@@ -1,7 +1,7 @@
-<?php /* Smarty version 3.1.27, created on 2015-12-04 02:41:16
+<?php /* Smarty version 3.1.27, created on 2015-12-04 03:08:57
          compiled from "C:\wamp\www\iut\NI\application\views\modules\categories.tpl" */ ?>
 <?php
-/*%%SmartyHeaderCode:142055660ef3ced93d3_27084673%%*/
+/*%%SmartyHeaderCode:9245660f5b95c3b84_36338848%%*/
 if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
@@ -9,7 +9,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '912705a495acdecb773a53e1ea0c064d02d8575e' => 
     array (
       0 => 'C:\\wamp\\www\\iut\\NI\\application\\views\\modules\\categories.tpl',
-      1 => 1449191414,
+      1 => 1449194933,
       2 => 'file',
     ),
     'b46e9df54bd9266b7e41c30e44f9beee72cdce23' => 
@@ -18,23 +18,23 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       1 => 1449193216,
       2 => 'file',
     ),
-    '28353a2f02bf860a1618114ee8127bda0d56aba9' => 
+    '560d47c2c670ec44e1245541b9b703becc3c7aaa' => 
     array (
-      0 => '28353a2f02bf860a1618114ee8127bda0d56aba9',
+      0 => '560d47c2c670ec44e1245541b9b703becc3c7aaa',
       1 => 0,
       2 => 'string',
     ),
   ),
-  'nocache_hash' => '142055660ef3ced93d3_27084673',
+  'nocache_hash' => '9245660f5b95c3b84_36338848',
   'has_nocache_code' => false,
   'version' => '3.1.27',
-  'unifunc' => 'content_5660ef3d012ad4_82558302',
+  'unifunc' => 'content_5660f5b96d3b85_79571616',
 ),false);
 /*/%%SmartyHeaderCode%%*/
-if ($_valid && !is_callable('content_5660ef3d012ad4_82558302')) {
-function content_5660ef3d012ad4_82558302 ($_smarty_tpl) {
+if ($_valid && !is_callable('content_5660f5b96d3b85_79571616')) {
+function content_5660f5b96d3b85_79571616 ($_smarty_tpl) {
 
-$_smarty_tpl->properties['nocache_hash'] = '142055660ef3ced93d3_27084673';
+$_smarty_tpl->properties['nocache_hash'] = '9245660f5b95c3b84_36338848';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -54,12 +54,13 @@ $_smarty_tpl->properties['nocache_hash'] = '142055660ef3ced93d3_27084673';
 		</header>
 		<main>
 			<?php
-$_smarty_tpl->properties['nocache_hash'] = '142055660ef3ced93d3_27084673';
+$_smarty_tpl->properties['nocache_hash'] = '9245660f5b95c3b84_36338848';
 ?>
 
 	<?php if (isset($_smarty_tpl->tpl_vars['cat']->value)) {?>
-		<img class="ui centered small image" src="medias/<?php echo $_smarty_tpl->tpl_vars['cat']->value;?>
-.png">
+		<img class="ui centered small image" src="medias/<?php echo $_smarty_tpl->tpl_vars['cat']->value['lien'];?>
+.png"><h2><?php echo $_smarty_tpl->tpl_vars['cat']->value['nom'];?>
+</h2>
 	<?php }?>
 
 		</main>
